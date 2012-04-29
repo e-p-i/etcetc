@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * 文字列一定幅(全角半角を考慮)ごとに文字列を挟む関数
+ * 
+ * @param $str            入力文字列
+ * @param $charwidth      目的の文字幅
+ * @param $delimiterstr   挿入する文字列(ex.改行文字)
+ * @return string         処理後文字列
+ */
 function my_str_delimit_bywidth_utf8($str, $charwidth, $delimiterstr)
 {
   $maxwidth = (int)$charwidth; //目的の文字幅
